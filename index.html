@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Vibe Coding</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <h1>🔥 Welcome to Vibe Coding</h1>
-  <p>Building cool things from scratch.</p>
+  <header class="nav">
+    <h1>Vibe<span>Code</span></h1>
+    <button class="nav-btn">Launch App</button>
+  </header>
 
-  <button onclick="changeVibe()">Change Vibe</button>
+  <section class="hero">
+    <h2>Build code by <span>vibe</span>, not syntax.</h2>
+    <p>A new way to think, create, and experiment with code.</p>
+    <button class="primary">Start Vibing</button>
+  </section>
+
+  <section class="app">
+    <h3>Vibe Playground</h3>
+
+    <textarea id="prompt" placeholder="Describe what you want to build..."></textarea>
+
+    <button onclick="generate()">Generate</button>
+
+    <pre id="output">// Your vibe output will appear here</pre>
+  </section>
 
   <script src="script.js"></script>
 </body>
