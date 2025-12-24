@@ -1,13 +1,76 @@
-body {
-  background-color: #0f172a;
-  color: #e5e7eb;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding-top: 100px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, Arial, sans-serif;
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 16px;
+body {
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: #e5e7eb;
+  min-height: 100vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.nav span {
+  color: #38bdf8;
+}
+
+.nav-btn {
+  background: transparent;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  padding: 8px 16px;
   cursor: pointer;
 }
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.primary {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #38bdf8;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.app {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  background: #020617;
+  color: #e5e7eb;
+  border: 1px solid #334155;
+  padding: 12px;
+  margin-top: 10px;
+}
+
+pre {
+  background: #020617;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
